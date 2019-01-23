@@ -1,0 +1,30 @@
+.homesearch{
+    z-index: 10000;
+    display: flex;
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    justify-content: space-between;
+    .searchtoast{
+        flex: 1;
+        padding-left: .2rem;
+        height: .7rem;
+        display: flex;
+        align-items: center;
+        input{
+            border-radius: 4px;
+            height: .6rem;
+            border: 0;
+            width: 100%;
+        }
+    }
+    .user{
+        width: 0.8rem;
+        height: 0.59rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        font-size: 13px;
+    }
+}

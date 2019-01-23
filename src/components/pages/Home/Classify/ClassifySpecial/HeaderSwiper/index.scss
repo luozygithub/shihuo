@@ -1,0 +1,24 @@
+.headerswiper{
+    display: flex;
+    height: 0.8rem;
+    justify-content: space-around;
+    overflow: hidden;
+    .logo{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        font-weight: 600;
+        padding-left: .2rem;
+    }
+    .swiper-slide{
+        display: flex;
+        padding: 0 .9rem;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .swiper-container{
+        display: flex;
+        flex: 1;
+    }
+}

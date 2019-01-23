@@ -1,0 +1,26 @@
+.swiper-list{
+    height:0.84rem;
+    border-bottom:2px solid #f7f7f7;
+    background-color: white;
+    // margin-top:10px;
+    span{
+        display: block;
+        width:1.6rem;
+        margin:10px 20px;
+    }
+    .swiper-slide{
+        &.actived:after{
+            content:"";
+            width: 0.6rem;
+            height:0.06rem;
+            position: absolute;
+            background:#ef0404; 
+            // color:#ef0404;
+            left:30px;
+            bottom:0;
+            right:0;
+            margin-left:auto;
+            margin-right:auto;
+        }
+    }
+}

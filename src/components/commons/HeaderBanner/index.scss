@@ -1,0 +1,46 @@
+.header-banner{
+    height: 1rem;
+    .swiper-container{
+       .banner-item-box{
+           display:flex;
+            padding: 0.1rem 0 0 .2rem;
+            height: 1rem;
+            background-color: black;
+
+            .img-box{
+                padding-right: 10px;
+                img{
+                    width: 0.7rem;
+                    height: 0.7rem;
+                    border-radius: 5px;
+                }
+            }
+            .header-banner-info{
+                .subtitle{
+                    color:white;
+                    font-size:14px;
+                }
+                .price{
+                    position: absolute;
+                    left:1.1rem;
+                    font-size:10px;
+                    color: white!important;
+                    letter-spacing: 4px;
+                }
+            }
+       }    
+
+       .swiper-pagination{
+           position: relative;
+           top: -0.2rem;
+           
+           .swiper-pagination-bullet{
+                background:rgb(184, 177, 177)!important;
+           }
+           .swiper-pagination-bullet-active{
+            background: rgba(255, 255, 255, 0.8)!important;
+        }
+
+       }
+    }
+}

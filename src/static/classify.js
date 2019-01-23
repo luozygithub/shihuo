@@ -1,0 +1,9 @@
+const classify = [
+    {id:1,title:"篮球",text:"纯白系列秒杀",img:"http://shihuo.hupucdn.com/def/20181105/2355ddafee2bdc0963e346192576c3631541383761.jpg?imageView2/0/w/160/h/160/interlace/1",pathname:"/home/classifyspecial",type:"?pageSize=20&param_str=&type=basketball&newsId=&channel_type=",name:"篮球"},
+    {id:2,title:"跑步",text:"女王节秒杀",img:"http://shihuo.hupucdn.com/def/20180801/a580ec1affbbf4a344974bc92969c7671533133549.jpg?imageView2/0/w/160/h/160/interlace/1",pathname:"/home/classifyspecial",type:"?pageSize=20&param_str=&type=running&newsId=&channel_type=",name:"跑步"},
+    {id:3,title:"健身",text:"步瑞特装备秒杀",img:"http://shihuo.hupucdn.com/def/20170915/ce4a7229a9d977a97379baa0bd0d9a921505460736.jpg?imageView2/0/w/160/h/160/interlace/1",pathname:"/home/classifyspecial",type:"?pageSize=20&param_str=&type=fitness&newsId=&channel_type=",name:"健身"},
+    {id:4,title:"足球",text:"其实是在吹总裁",img:"http://shihuo.hupucdn.com/trade/reposition/2017-10-04/27812ca1b16a075e15f56a17686cbe95.png?imageView2/0/w/160/h/160/interlace/1",pathname:"/home/classifyspecial",type:"?pageSize=20&param_str=&type=football&newsId=&channel_type=",name:"足球"},
+    {id:5,title:"潮流",text:"78元短袖秒杀",img:"http://shihuoproxy.hupucdn.com/aHR0cDovL2ltZy5hbGljZG4uY29tL2ltZ2V4dHJhL2kyL1RCMURNQTJRRlhYWFhhZ2FwWFhZWEdjR3BYWF9NMi5TUzI?imageView2/0/w/160/h/160/interlace/1",pathname:"/home/classifyspecial",type:"?pageSize=20&param_str=&type=freestyle&newsId=&channel_type=",name:"潮流"},
+    {id:6,title:"数码",text:"Note 7体验",img:"http://shihuo.hupucdn.com/appZone/201709/3017/912164aae6a6afb48bf1ef2ff60bcbb3.jpg?imageView2/0/w/160/h/160/interlace/1",pathname:"/home/classifyspecial",type:"?pageSize=20&param_str=&type=digital&newsId=&channel_type=",name:"数码"}
+]
+export default classify

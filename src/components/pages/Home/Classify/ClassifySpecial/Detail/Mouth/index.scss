@@ -1,0 +1,45 @@
+.detail{
+    .top{
+        display: flex;
+        justify-content: space-between;
+        margin: 0 .3rem;
+        font-weight: 700;
+    }
+    .tagitems{
+        display: flex;
+        flex-wrap: wrap;
+        padding: .3rem .2rem;
+        span{
+            background-color: #f5f5f5;
+            padding: .09333rem .2rem;
+            margin-right: .26667rem;
+            border-radius: 3px;
+        }
+    }
+    .comments{
+        display: flex;
+        flex-direction: column;
+        padding: 0 .3rem;
+        .who{
+            display:flex;
+            justify-content: flex-start;
+            margin: .2rem 0;
+            .name{
+                font-weight: bold;
+                margin-right: .1rem;
+            }
+        }
+        .txt{
+            width: 100%;
+            overflow: hidden;
+            margin: .2rem 0;
+        }
+        .pic{
+            display: flex;
+            flex-wrap: wrap;
+            img{
+                margin: .1rem;
+            }
+        }
+    }
+}

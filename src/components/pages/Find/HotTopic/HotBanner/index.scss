@@ -1,0 +1,24 @@
+.swiper-hotbanner{
+    height:1.24rem;
+    width:100%;
+    margin-bottom:20px;
+    .swiper-hotslide{
+        width:2.56rem;
+        overflow: hidden;
+        position:relative;
+        img{
+            display: block;
+            width:2.56rem;
+            height:2.56rem;
+        }
+        .blacking{
+            height:1.17rem;
+            position: absolute;
+            top:0.2rem;
+            left:0.3rem;
+            width:1.8rem;
+            font-size: 10px;
+            // height:2.56rem;
+        }
+    }
+}

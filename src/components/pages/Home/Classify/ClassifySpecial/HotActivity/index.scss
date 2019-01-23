@@ -1,0 +1,25 @@
+.hotactivity{
+    display: flex;
+    flex-direction: column;
+    padding: 0 .18rem;
+    margin: .2rem 0;
+    h3{
+        padding-left: .05rem;
+        font-weight: 600;
+        margin-bottom: .2rem;
+    }
+    .content{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        .item{
+            width: 2.23rem;
+            display: flex;
+            flex-direction: column;
+            img{
+                width: 100%;
+            }
+        }
+    }
+
+}

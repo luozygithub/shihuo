@@ -1,0 +1,57 @@
+.jiukjiu {
+    background-color: #fff;
+    padding-top:.3rem;
+}
+.jiukjiu .swiper-container{
+    padding-top: .15rem;
+    padding-right: 1rem;
+}
+
+ .jiukjiu .tit-block span, .youhuiIndex .jiukjiu .tit-block .fr a {
+    color: #999;
+    font-size: 12px;
+    padding-left: .2rem;
+    vertical-align: bottom;
+}
+.tit-block .fr a{
+    display:flex;
+}
+.tit-block .fr a {
+    color: #999;
+    font-size: 12px;
+    padding-left: .2rem;
+    vertical-align: middle;
+}
+.tit-block .fr img {
+    width: .14667rem;
+    height: .16rem;
+    margin-top:0.08rem;
+    vertical-align: middle;
+}
+.jiukjiu .swiper-wrapper .swiper-slide{
+    width: 1.6rem;
+    padding-right: .1rem;
+    margin-right: .12rem;
+}
+ .jiukjiu .swiper-wrapper .swiper-slide .imgs {
+    width: 1.44rem;
+    height: 1.44rem;
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+.jiukjiu .swiper-wrapper .swiper-slide .name {
+    width: 1.6rem;
+    color: #333;
+    font-size: 13px;
+    height: .6rem;
+    line-height: .66667rem;
+    text-align: left;
+    overflow: hidden;
+}
+.jiukjiu .swiper-wrapper .swiper-slide .price {
+    text-align: center;
+    color: #dd1712;
+    font-size: 15px;
+}

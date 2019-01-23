@@ -1,0 +1,39 @@
+.Content{
+    height:6.5rem;
+    display: flex;
+    flex-direction: row;
+    border-bottom:1px solid #f7f7f7;
+    background-color:white;
+    .photo{
+        display:block;
+        width: .68rem;
+        height:.68rem;
+        margin:10px;
+        border-radius: 50%;
+    }
+    .content{
+        .name{
+            font-size:0.4rem;
+        }
+        .time{
+            font-size: 0.36rem;
+            color:#9a9999;
+        }
+        .introduce{
+            font-size:0.36rem;
+        }
+        img{
+            height:2.78rem;
+            margin:20px 0;
+        }
+        .interact{
+            display: flex;
+            flex-direction: row;
+            font-size:0.3rem;
+            div{
+                margin:0 5px;
+            }
+        }
+       
+    }
+}

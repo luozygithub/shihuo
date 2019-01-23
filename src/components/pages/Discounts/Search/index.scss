@@ -1,0 +1,52 @@
+.searchBox {
+    height: 1rem;
+    width: 100%;
+    left: 0;
+    background-color: #f0f3f5;
+    padding-left: .4rem;
+    padding-right: .4rem;
+    padding: .2rem .26667rem;
+
+    z-index: 1;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    #searchform{
+        background-color: #fff;
+        .search {
+            overflow: hidden;
+            font-size: 1.1em;
+            border: 0 none;
+            color: #666;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            border-radius: 5px;
+            background: #fff url(http://sh1.hoopchina.com.cn/images/trademobile/search/zoom.png) 9px center no-repeat;
+           
+            background-size: 1.3em;
+            .input {
+                width: 100%;
+                border: 0;
+                background: 0 0;
+                color: #666;
+                font-size: 1.1em;
+                height: 32px;
+                outline: 0;
+                text-align: left;
+                padding: 0 10% 0 13%;
+                float: left;
+                box-sizing: border-box;
+            }
+            .input.reset {
+                left: 77%;
+                top: 10%;
+                height: 80%;
+                background: url(//sh1.hoopchina.com.cn/images/trademobile/search/search_close.png?v=2016092101) center no-repeat;
+                background-size: 60%;
+            }
+        }
+    }
+    
+}

@@ -1,0 +1,21 @@
+.listaccount{
+    display: flex;
+    flex-direction: column;
+    padding:0 .3rem;
+    .top{
+        display: flex;
+        justify-content: space-between;
+        margin: .2rem;
+    }
+    .accountswiper{
+        width: 100%;
+        .swiper-slide{
+            width: 1.92rem;
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
+
+

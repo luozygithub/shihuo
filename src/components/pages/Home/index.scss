@@ -1,0 +1,77 @@
+.home{
+  
+    overflow: auto;
+ 
+}
+.banner.clearfix{
+    height: 4.2rem;
+    width: 100%;
+    border-top:.2rem solid gray;
+    .zone0.clearfix{
+        height:1.4rem;
+        width: 50%;
+        float: left;
+        background: #fff;
+        .tit {
+            width: 2.56rem;
+            float: left;
+            margin-top: .2rem;
+            padding-left: .3rem;
+            .h2 {
+                font-size: .4rem;
+                color: #333;
+                font-weight: 600;
+            }
+        }
+        .pic{
+            float: right;
+            border: 0;
+            outline: 0;
+            width: 1.4rem;
+            height: 1.4rem;
+            margin-top: -1.1rem;
+        }
+    }
+}
+.hot.clearfix{
+    width: 100%;
+    height: 2.8rem;
+    border: .01rem solid gray;
+    margin-top: 12px;
+    .block {
+        text-align: center;
+        padding: .2rem 0;
+        width: 31%;
+        height: 2.57rem;
+        float: left;
+        background: block;
+        margin: .06667rem;
+        .h2 {
+            display: block;
+            font-size: 1.5em;
+            margin-block-start: 0.83em;
+            margin-block-end: 0.83em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            font-weight: bold;
+        }
+        
+            .imgs{
+                height: 1.2rem;
+                width: 1.2rem;
+                margin-left: .4rem;
+            }
+        
+         
+    }
+}
+.hot-activity.clearfix{
+    height: .7rem;
+    width: 100%;
+    .head-top{
+       font-size: 14px;
+        line-height: .4rem;
+        padding: .26667rem .4rem;
+        margin-bottom: .13333rem;
+    }
+}

@@ -1,0 +1,31 @@
+.subsearch{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 99999;
+    height: 100%;
+    background: #fff;
+    .bottom{
+        padding:0 .2rem;
+        display: flex;
+        flex-direction: column;
+        p{
+            padding: .2rem 0rem; 
+        }
+        div{
+            display: flex;
+            flex-wrap: wrap;
+            span{
+                width: .7rem;
+                height: .6rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                border: 1px solid #e5e5e5;
+                margin: .18rem .18rem .18rem 0;
+            }
+        }
+        
+    }
+}

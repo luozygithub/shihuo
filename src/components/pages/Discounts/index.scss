@@ -1,0 +1,80 @@
+.discounts{
+    padding-bottom: 4rem;
+}
+.yhq {
+    background-color: #f0f3f5;
+    padding: .34667rem .4rem;
+    padding-top: .1rem;
+    color: #444;
+    span{
+        font-weight: bolder;
+    }
+    .zn {
+        background: url(//sh1.hoopchina.com.cn/fis_static/shihuomobile/static/youhui/index/sqzn_2e60ac8.png) no-repeat;
+        background-size: 1.6rem auto;
+        width: 1.6rem;
+        height: .56rem;
+    }
+}
+.shihuo1111-temai {
+    background-color: #fff;
+    padding: .4rem;
+    .tit-block{
+        b{
+            font-weight: bold;
+            font-size: 14px;
+        }
+        .fr span{
+            display: flex;
+            img{
+                padding-top: 0.4em;
+                width: 0.6em;
+                height: 1em;
+            }
+        }
+    }
+    .entrance-list {
+        a {
+            color: #444;
+            text-decoration: none;
+        }
+        margin-top: .33333rem;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        -webkit-justify-content: space-between;
+        -moz-justify-content: space-between;
+        justify-content: space-between;
+        .entrance-item {
+            width: 1.10667rem;
+            height: 1.64rem;
+            .item-img {
+                width: 1.1rem;
+                height: 1.1rem;
+                border-radius: .64rem;
+                border: .01333rem solid #eee;
+                display: block;
+            }
+            .item-tit {
+                text-align: center;
+                font-size: 13px;
+                color: #333;
+            }
+        }
+    }
+}
+.discounts{
+    .advert-radius{
+        padding-top: .3rem;
+        width:100%;
+        // padding: 0 5%;
+        img{
+            width: 100%;
+            border-radius: .8rem;
+        }
+    }
+}

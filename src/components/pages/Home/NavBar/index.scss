@@ -1,0 +1,27 @@
+.home-nav-bar{
+    height:.74rem;
+    border-bottom:1px solid #e5e5e5;
+    .swiper-slide{
+        width:auto;
+        padding:.14rem .2rem .26rem .3rem;
+        span{
+            width:1.2rem;
+            height:.3rem;
+            display: inline-block;
+            text-align: center;
+        }
+        position: relative;
+        &.actived:after{
+            content:"";
+            position: absolute;
+            width:.6rem;
+            height:0.06rem;
+            background:rgb(248, 161, 32) ;
+            left:0;
+            bottom:0;
+            right:0;
+            margin-left:auto;
+            margin-right:auto;
+        }
+    }
+}
