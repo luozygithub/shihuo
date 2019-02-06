@@ -36,6 +36,12 @@ class SwiperList extends Component{
             case "最新资讯":
                 replace("/find/listtwo");
                 break;
+            case "测评AllStars":
+                replace("/find/listthree");
+                break;
+            case "潮流风向":
+                replace("/find/listfour");
+                break;
             default:
                 break;
         }
@@ -51,6 +57,12 @@ class SwiperList extends Component{
         }
         else if (pathname === "/find/listtwo"){
             index = 1;
+        }
+        else if (pathname === "/find/listthree"){
+            index = 2;
+        }
+        else if (pathname === "/find/listfour"){
+            index = 3;
         }
         this.setState({
             activeId:index

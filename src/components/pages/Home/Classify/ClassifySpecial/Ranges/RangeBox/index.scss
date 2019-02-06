@@ -1,0 +1,51 @@
+.range-box{
+    height: 2.4rem;
+    margin: .2rem .2rem 0 .2rem;
+    border-bottom: 1px solid rgb(224, 211, 211);
+    display: flex;
+    .img-box{
+        width: 2rem;
+        height: 2rem;
+    }
+    .detail{
+        display: flex;
+        flex-direction: column;
+        margin-left: .2rem;
+        .header{
+            display: flex;
+            line-height: .46667rem;
+            height: .96rem;
+            .name{
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
+                font-size: 20px;
+                width: 3rem;
+                
+            }
+            .tag{
+                padding-left: 10px;
+            }
+        }
+        .intro{
+            font-size: 12px;
+            padding-bottom: .4rem;
+        }
+        .price{
+            display: flex;
+            justify-content: space-between;
+            margin-right: -.7rem;
+            .left{
+                i{
+                    color: red;
+                    font-size: 18px;
+                }
+            }
+            .hot{
+                i{
+                    margin-right: .1rem;
+                }
+            }
+        }
+    }
+}

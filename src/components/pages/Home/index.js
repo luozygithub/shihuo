@@ -4,7 +4,6 @@ import Activity from "./Activity"
 import SearchInfo from "../../../components/commons/SearchInfo"
 import Banner from "../../commons/Banner"
 import Classify from "./Classify"
-import HeaderBanner from "./../../commons/HeaderBanner"
 import AppFooter from "./../../commons/AppFooter"
 class Home extends Component{
     render(){

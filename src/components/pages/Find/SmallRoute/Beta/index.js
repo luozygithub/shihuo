@@ -1,24 +1,21 @@
 import React,{Component} from "react"
 import "./index.scss"
+import {NavBar,Icon} from "antd-mobile"
 import GroupState from "../../../../../modules/groups"
-import {NavLink} from "react-router-dom"
-class ListTwo extends Component{
+import 'antd-mobile/dist/antd-mobile.css';
+import qs from "qs"
+class Beta extends Component{
     componentWillMount(){
-        this.props.getListContentTwo();
-        
+        this.props.getListContent();
+        // console.log(this.props)
     }
-    renderListcontent(){
-        let {listcontentTwo} = this.props;
-        if(!listcontentTwo) return "";
-        return listcontentTwo.map(item=>(
-            <NavLink to={{
-                pathname:"/listdetail",
-                search:"?title="+item.data.title+"&url="+item.data.img+"&introduce="+item.data.intro
-            }}
-            key={item.data.title}
-            >
-            <div className="Content" key={item.data.href}>
-                    <img src={item.data.avatar} alt="" className="photo"/>
+    renderTextlist(){
+        let {listcontents} = this.props;
+        if(!listcontents) return "";
+       
+        return listcontents.map(item=>(
+            <div className="Content" key={item.data.img}>
+                    <img src={item.data.img} alt="" className="photo"/>
                     <div className="content">
                         <div className="name">{item.data.author_name}</div>
                         <div className="time">{item.data.date}</div>
@@ -32,18 +29,28 @@ class ListTwo extends Component{
                         </div>
                     </div>
                 </div>
-            </NavLink>
         ))
     }
     render(){
         return (
+           
             <div>
-                {this.renderListcontent()}
+                 <NavBar
+                    mode="light"
+                    icon={<Icon type="left" />}
+                    onLeftClick={() =>{this.props.history.push("/find")}}
+                    
+                    >众测</NavBar> 
+                    <div className="top">
+                        <span>众测报告</span>
+                        <a href="">更多报告></a>
+                    </div>
+                {this.renderTextlist()}
             </div>
         )
     }
 }
-export default GroupState(ListTwo,{
+export default GroupState(Beta,{
     reducer:"find",
-    states:["listcontentTwo"]
+    states:["listcontents"]
 });

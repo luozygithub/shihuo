@@ -98,6 +98,13 @@ module.exports = function(proxy, allowedHost) {
           "^/sh":""
         }
       },
+      "/sh":{
+        target:"http://m.shihuo.cn/",
+        changeOrigin:true,
+        pathRewrite:{
+          "^/sh":""
+        }
+      },
       '/find':{
         target:"http://m.shihuo.cn",//http://m.shihuo.cn/find/mobileList?tag_id=283&param_str=
         changeOrigin:true,

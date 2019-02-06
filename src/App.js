@@ -12,6 +12,7 @@ import Register from "./components/pages/More/Register"
 import ClassifySpecial from "./components/pages/Home/Classify/ClassifySpecial"
 import Detail from "./components/pages/Home/Classify/ClassifySpecial/Detail"
 import Find from "./components/pages/Find"
+import Ranges from "./components/pages/Home/Classify/ClassifySpecial/Ranges"
 //引入路由
 import { Route, withRouter, Switch} from "react-router-dom";
 class App extends Component {
@@ -43,15 +44,16 @@ class App extends Component {
 }
 App.defaultProps = {
   routes: [
-    {id:1, path:"/home/detail", component:Detail, exact:false},
-    {id:2, path:"/home/classifyspecial", component:ClassifySpecial, exact:false},
-    { id: 3, path: "/home", component: Home, exact: false },
-    { id: 4, path: "/discounts", component: Discounts, exact: false},
-    { id: 5, path: "/find", component: Find, exact: false },
-    { id: 6, path: "/equipment", component: Equipment, exact: false },
-    { id: 7, path: "/more", component: More, exact: false},
-    { id: 8, path: "/login", component: Login, exact: false},
-    { id: 9, path: "/register", component: Register, exact: false},
+    {id:1, path:"/home/range", component:Ranges, exact:false},
+    {id:2, path:"/home/detail", component:Detail, exact:false},
+    {id:3, path:"/home/classifyspecial", component:ClassifySpecial, exact:false},
+    { id: 4, path: "/home", component: Home, exact: false },
+    { id: 5, path: "/discounts", component: Discounts, exact: false},
+    { id: 6, path: "/find", component: Find, exact: false },
+    { id: 7, path: "/equipment", component: Equipment, exact: false },  
+    { id: 8, path: "/more", component: More, exact: false},
+    { id: 9, path: "/login", component: Login, exact: false},
+    { id: 10, path: "/register", component: Register, exact: false},
   ]
 }
 export default withRouter(App);

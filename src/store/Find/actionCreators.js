@@ -1,9 +1,25 @@
 import BannerData from "../../statics/BannerData"
 import HotBanner from "../../statics/HotBanner"
 import Swiperlist from "../../statics/SwiperList"
+import PartList from "../../statics/PartList"
 import {Get} from "../../modules/axios-util"
-import {CHANGE_FIND_BANNERS,CHANGE_FIND_HOTBAN,CHANGE_FIND_LIST,CHANE_FIND_CONTENT,CHANE_FIND_CONTENTTWO} from "./const"
+import {CHANGE_FIND_BANNERS,
+        CHANGE_FIND_HOTBAN,
+        CHANGE_FIND_LIST,
+        CHANE_FIND_CONTENT,
+        CHANE_FIND_CONTENTTWO,
+        CHANE_FIND_CONTENTThree,
+        CHANE_FIND_CONTENTFour,
+        CHANGE_FIND_PARTLIST} from "./const"
 export default{
+    getPartList(callback){
+        let partlist = PartList;
+        let action = {
+            type:CHANGE_FIND_PARTLIST,partlist:partlist
+        } 
+        callback&&callback();
+        return action
+    },
     getFindBanners(callback){  
          let banners = BannerData;
         //  console.log(banners)
@@ -38,7 +54,7 @@ export default{
             Get({
                 url:"/find/mobileList?tag_id=283&param_str="
             }).then(res=>{
-                // console.log(res.data)
+                console.log(res.data)
                 let data = res.data.data;
                 let listcontents = [];
                     data.forEach(item=>{
@@ -67,5 +83,38 @@ export default{
             })
         }
     },
-
+    getListContentThree(){
+        return dispatch=>{
+            Get({
+                url:"/find/mobileList?tag_id=281&param_str="
+            }).then(res=>{
+                // console.log(res.data)
+                let data = res.data.data;
+                let listcontentThree = [];
+                    data.forEach(item=>{
+                        listcontentThree = listcontentThree.concat(item)
+                    })
+                    dispatch({
+                        type:CHANE_FIND_CONTENTThree,listcontentThree
+                    })
+            })
+        }
+    },
+    getListContentFour(){
+        return dispatch=>{
+            Get({
+                url:"/find/mobileList?tag_id=318&param_str="
+            }).then(res=>{
+                // console.log(res.data)
+                let data = res.data.data;
+                let listcontentFour = [];
+                    data.forEach(item=>{
+                        listcontentFour = listcontentFour.concat(item)
+                    })
+                    dispatch({
+                        type:CHANE_FIND_CONTENTFour,listcontentFour
+                    })
+            })
+        }
+    },
 }

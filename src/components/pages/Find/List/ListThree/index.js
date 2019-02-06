@@ -2,15 +2,15 @@ import React,{Component} from "react"
 import "./index.scss"
 import GroupState from "../../../../../modules/groups"
 import {NavLink} from "react-router-dom"
-class ListTwo extends Component{
+class ListThree extends Component{
     componentWillMount(){
-        this.props.getListContentTwo();
-        
+        this.props.getListContentThree();
+        console.log(this.props)
     }
     renderListcontent(){
-        let {listcontentTwo} = this.props;
-        if(!listcontentTwo) return "";
-        return listcontentTwo.map(item=>(
+        let {listcontentThree} = this.props;
+        if(!listcontentThree) return "";
+        return listcontentThree.map(item=>(
             <NavLink to={{
                 pathname:"/listdetail",
                 search:"?title="+item.data.title+"&url="+item.data.img+"&introduce="+item.data.intro
@@ -43,7 +43,7 @@ class ListTwo extends Component{
         )
     }
 }
-export default GroupState(ListTwo,{
+export default GroupState(ListThree,{
     reducer:"find",
-    states:["listcontentTwo"]
+    states:["listcontentThree"]
 });

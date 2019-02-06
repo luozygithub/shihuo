@@ -4,4 +4,7 @@ export default {
     swiperlists:null,
     listcontents:null,
     listcontentTwo:null,
+    listcontentThree:null,
+    listcontentFour:null,
+    partlist:null
 }

@@ -3,7 +3,7 @@ import special from "../../static/special"
 import account from "../../static/account"
 import banners from "../../static/banners"
 import {Get} from "../../modules/axios-util"
-import {GET_MOUTH,GET_BANNERS,GET_ClASSIFY,GET_SPECIAL,GET_USER,GET_ACCOUNT,GET_ALL,GET_RECOMMEND,GET_SHOPPING} from "./const"
+import {GET_RANGE,GET_MOUTH,GET_BANNERS,GET_ClASSIFY,GET_SPECIAL,GET_USER,GET_ACCOUNT,GET_ALL,GET_RECOMMEND,GET_SHOPPING} from "./const"
 export default {
     getClassify(){
         let action = {
@@ -28,7 +28,7 @@ export default {
     },
     getAll(callback){
         return dispatch=>{
-            Get({url:" /sports/getNews?pageSize=20&param_str=&type=basketball&newsId=&channel_type="}).then(res=>{
+            Get({url:" /getNews?pageSize=20&param_str=&type=basketball&newsId=&channel_type="}).then(res=>{
                 let data = res.data.data;
                 let all = [];
                 data.forEach(item=>{
@@ -43,7 +43,7 @@ export default {
     },
     getRecommend(callback){
         return dispatch=>{
-            Get({url:"/sports/getNews?pageSize=20&param_str=&type=basketball&newsId=&channel_type=11"}).then(res=>{
+            Get({url:"/getNews?pageSize=20&param_str=&type=basketball&newsId=&channel_type=11"}).then(res=>{
                 let data = res.data.data;
                 let recommend = [];
                 data.forEach(item=>{  
@@ -56,7 +56,7 @@ export default {
     },
     getShopping(callback){
         return dispatch=>{
-            Get({url:"/sports/getNews?pageSize=20&param_str=&type=basketball&newsId=&channel_type=12"}).then(res=>{
+            Get({url:"/getNews?pageSize=20&param_str=&type=basketball&newsId=&channel_type=12"}).then(res=>{
                 let data = res.data.data;
                 let shopping = [];
                 data.forEach(item=>{  
@@ -69,7 +69,7 @@ export default {
     },
     getUser(callback){
         return dispatch=>{
-            Get({url:"/sports/getNews?pageSize=20&param_str=&type=basketball&newsId=&channel_type=7"}).then(res=>{
+            Get({url:"/getNews?pageSize=20&param_str=&type=basketball&newsId=&channel_type=7"}).then(res=>{
                 let data = res.data.data;
                 let user = [];
                 data.forEach(item=>{  
@@ -90,7 +90,7 @@ export default {
     },
     getMouth(callback){
         return dispatch=>{
-            Get({url:"/sports/getComment?id=13&tag_id=0&page=1&page_size=5&sort=hot"}).then(res=>{
+            Get({url:"/getComment?id=13&tag_id=0&page=1&page_size=5&sort=hot"}).then(res=>{
                 let data = res.data.data;
                 let mouth = data;
                 callback&&callback();
@@ -98,6 +98,13 @@ export default {
             })
         }
     },
-
+    getRange(range, brand, p){
+        return dispatch=>{
+            Get({url:"/sports/search?page="+p+"&page_size=20&range="+range+"&c=&sort=hot&brand="+brand+"&price=&keywords=&tag_type=&show_type=grid&type=1"}).then(res=>{
+                let range = res.data.data;
+                dispatch({type:GET_RANGE,range}) 
+            })
+        }
+    }
 
 }

@@ -1,5 +1,5 @@
 import state from "./state"
-import {GET_MOUTH,GET_BANNERS,GET_ClASSIFY,GET_SPECIAL,GET_USER,GET_ACCOUNT,GET_ALL,GET_RECOMMEND,GET_SHOPPING} from "./const"
+import {GET_RANGE,GET_MOUTH,GET_BANNERS,GET_ClASSIFY,GET_SPECIAL,GET_USER,GET_ACCOUNT,GET_ALL,GET_RECOMMEND,GET_SHOPPING} from "./const"
 const reducer = (prevState=state, action)=>{
     let new_state = {...prevState}
     switch (action.type){
@@ -29,6 +29,9 @@ const reducer = (prevState=state, action)=>{
             break;
         case GET_MOUTH:
             new_state.mouth = action.mouth
+            break;
+        case GET_RANGE:
+            new_state.range = action.range
             break;    
         default:
             break;

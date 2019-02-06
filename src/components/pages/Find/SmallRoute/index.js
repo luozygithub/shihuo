@@ -1,11 +1,16 @@
 import React,{Component} from "react"
 import "./index.scss"
 import {NavLink} from "react-router-dom"
+import {withRouter} from "react-router-dom"
+// import Beta from "../Beta"
 class SmallRoute extends Component{
     renderSmallroute(){
         let {smallnavs} = this.props;
+        console.log(smallnavs)
         return smallnavs.map(item=>(
-            <NavLink activeClassName="actived" key={item.id} to={{pathname:item.path}}>
+            <NavLink activeClassName="actived" key={item.id} 
+                to={{pathname:item.path,
+                    search:"?title="+item.title}}>
                 <i className={"fa fa-"+ item.icon}></i>
                 <span>{item.title}</span>
             </NavLink>
@@ -27,4 +32,4 @@ SmallRoute.defaultProps = {
         {id:4,path:"/find/hot",icon:"thermometer-full",title:"最热"},
     ]
 }
-export default SmallRoute;
+export default withRouter(SmallRoute);

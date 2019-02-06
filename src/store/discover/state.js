@@ -7,5 +7,6 @@ export default {
     shopping:null,
     user:null,
     banners:null,
-    mouth:null
+    mouth:null,
+    range:null,
 }
